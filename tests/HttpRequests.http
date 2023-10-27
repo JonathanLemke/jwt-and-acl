@@ -1,0 +1,23 @@
+### Login
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password"
+}
+
+### refresh
+POST http://127.0.0.1:8000/api/auth/refresh
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTg0MzI2MzQsImV4cCI6MTY5ODQzNjIzNCwibmJmIjoxNjk4NDMyNjM0LCJqdGkiOiI3MTFqZmJpeURyNW5Gc2pnIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PibktEx_TuI6gMFUfyLHp6H9nIrZt7OU80LQAOw4cDQ
+
+### me
+POST http://127.0.0.1:8000/api/auth/me
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5ODQzMjYzNCwiZXhwIjoxNjk4NDM2MjUxLCJuYmYiOjE2OTg0MzI2NTEsImp0aSI6ImZONXprS2JsS3ZYUjVCZFkiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.N0xMA2dMnmDdDoPsOW1EXf-JRS6DjB2SxPKGmQ4ojNk
+
+### logout
+POST http://127.0.0.1:8000/api/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5ODQzMjYzNCwiZXhwIjoxNjk4NDM2MjUxLCJuYmYiOjE2OTg0MzI2NTEsImp0aSI6ImZONXprS2JsS3ZYUjVCZFkiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.N0xMA2dMnmDdDoPsOW1EXf-JRS6DjB2SxPKGmQ4ojNk
